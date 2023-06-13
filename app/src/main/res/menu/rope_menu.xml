@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/reduction_menu" android:title="reduction">
+
+    </item>
+
+    <item android:id="@+id/register_reel" android:title="register reel">
+
+    </item>
+    <item android:id="@+id/register_spool" android:title="register spool">
+
+    </item>
+    <item android:id="@+id/reel_gallery" android:title="reel gallery">
+
+    </item>
+    <item android:id="@+id/block_reduction" android:title="block_reduction">
+
+    </item>
+
+
+</menu>

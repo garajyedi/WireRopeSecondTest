@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/back_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inletDiameterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#71c562"
+        android:ems="10"
+        android:hint="inlet diameter"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText android:textSize="30sp" android:id="@+id/outletDiameterText" android:background="#71c562" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:hint="outlet diameter" android:ems="10" android:inputType="numberDecimal" android:textAlignment="center" app:layout_constraintEnd_toEndOf="@+id/inletDiameterText" app:layout_constraintStart_toStartOf="@+id/inletDiameterText" app:layout_constraintTop_toBottomOf="@+id/inletDiameterText"/>
+
+    <Button
+        android:id="@+id/reductionCalculationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="reductionCalculation"
+        android:text="Calculate"
+        android:textColor="#71c562"
+        app:layout_constraintEnd_toEndOf="@+id/outletDiameterText"
+        app:layout_constraintStart_toStartOf="@+id/outletDiameterText"
+        app:layout_constraintTop_toBottomOf="@+id/outletDiameterText" />
+    <Button android:textColor="#71c562" android:id="@+id/clearReductionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Clear" android:onClick="clearReduction" app:layout_constraintEnd_toEndOf="@+id/reductionCalculationButton" app:layout_constraintStart_toStartOf="@+id/reductionCalculationButton" app:layout_constraintTop_toBottomOf="@+id/reductionCalculationButton"/>
+
+    <TextView
+        android:id="@+id/calculationResultText"
+        android:layout_width="239dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:hint="reduction"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/outletDiameterText"
+        app:layout_constraintStart_toStartOf="@+id/outletDiameterText"
+        app:layout_constraintTop_toBottomOf="@+id/clearReductionButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

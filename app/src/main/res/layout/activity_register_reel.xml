@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/barrelDiameterRegisterText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box1"
+        android:ems="10"
+        android:hint="barrel (core) diameter"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    <EditText android:id="@+id/flangeDiameterRegisterText" android:background="@drawable/box2" android:layout_width="180dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:hint="flange diameter" android:ems="10" android:inputType="numberDecimal" android:textAlignment="center" app:layout_constraintEnd_toEndOf="@+id/barrelDiameterRegisterText" app:layout_constraintStart_toStartOf="@+id/barrelDiameterRegisterText" app:layout_constraintTop_toBottomOf="@+id/barrelDiameterRegisterText"/>
+    <EditText android:id="@+id/traverseDistanceRegisterText" android:background="@drawable/box3" android:layout_width="180dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:hint="traverse distance" android:ems="10" android:inputType="numberDecimal" android:textAlignment="center" app:layout_constraintEnd_toEndOf="@+id/flangeDiameterRegisterText" app:layout_constraintStart_toStartOf="@+id/flangeDiameterRegisterText" app:layout_constraintTop_toBottomOf="@+id/flangeDiameterRegisterText"/>
+    <EditText android:id="@+id/spoolNameRegisterText" android:background="@drawable/box4" android:layout_width="180dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:hint="spool name" android:ems="10" android:inputType="text" android:textAlignment="center" app:layout_constraintEnd_toEndOf="@+id/traverseDistanceRegisterText" app:layout_constraintStart_toStartOf="@+id/traverseDistanceRegisterText" app:layout_constraintTop_toBottomOf="@+id/traverseDistanceRegisterText"/>
+    <EditText android:id="@+id/noteRegisterText" android:background="@drawable/comment_box" android:layout_width="180dp" android:layout_height="75dp" android:layout_marginTop="20dp" android:hint="note" android:ems="10" android:inputType="text" android:textAlignment="center" app:layout_constraintEnd_toEndOf="@+id/spoolNameRegisterText" app:layout_constraintStart_toStartOf="@+id/spoolNameRegisterText" app:layout_constraintTop_toBottomOf="@+id/spoolNameRegisterText"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:onClick="registerSpool"
+        android:text="Register Spool"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noteRegisterText"
+        app:layout_constraintStart_toStartOf="@+id/noteRegisterText"
+        app:layout_constraintTop_toBottomOf="@+id/noteRegisterText" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spool_total" />
+</androidx.constraintlayout.widget.ConstraintLayout>

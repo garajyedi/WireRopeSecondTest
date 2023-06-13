@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WireRope</string>
+    <string name="core_diameter">core \ndiameter</string>
+    <string name="core">core\n⌀</string>
+    <string name="gap">g\na\np</string>
+    <string name="flange_diameter">flange\ndiameter</string>
+    <string name="flange">flange\n⌀</string>
+    <string name="product_diameter">product\n⌀</string>
+</resources>

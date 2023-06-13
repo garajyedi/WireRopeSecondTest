@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/die_back"
+    android:textAlignment="center"
+    app:layout_marginBaseline="1dp"
+    tools:context=".BlockReduction">
+
+    <TextView
+        android:id="@+id/tableText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_name"
+        android:fontFamily="@font/manrope"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="reduction to diameter"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableText1"
+        app:layout_constraintStart_toStartOf="@+id/tableText1"
+        app:layout_constraintTop_toBottomOf="@+id/clear1Button" />
+
+    <Button
+        android:id="@+id/clear1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clear1"
+        android:text="clear"
+        android:textAlignment="center"
+        android:textColor="#04BFAD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableText1"
+        app:layout_constraintStart_toStartOf="@+id/tableText1"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/clear2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:onClick="clear2"
+        android:text="Clear"
+        android:textAlignment="center"
+        android:textColor="#04BFAD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableText2"
+        app:layout_constraintStart_toStartOf="@+id/tableText2"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableText1">
+
+        <EditText
+            android:id="@+id/blockInletDiameter1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="inlet"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/block1Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block6Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="6"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block9Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="9"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="9"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block13Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="13"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="13"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block10Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="10"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="10"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block7Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="7"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block11Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="11"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="11"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block2Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block8Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="8"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="8"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block15Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="15"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="15"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block14Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="14"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="14"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block10Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="10"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block3Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block8Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="8"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block6Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="6"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block1Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block13Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="13"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block11Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="11"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block15Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="15"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block7Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="7"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="7"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block5Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block3Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="3"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block12Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="12"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="12"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block9Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="9"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/block5Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="5"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block4Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="4"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/block2Diameter"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="2"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/block14Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="14"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block4Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/block12Reduction"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="12"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/tableText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_name"
+        android:fontFamily="@font/manrope"
+        android:gravity="center"
+        android:text="diameter to reduction"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableText2">
+
+        <EditText
+            android:id="@+id/blockInletDiameter2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="inlet"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:nextFocusRight="@+id/blockReduction1"
+            android:nextFocusForward="@+id/blockReduction1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/blockReduction15"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="15"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="15"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter13"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="13"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter12"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="12"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction9"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="9"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="9"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter10"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="10"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="3"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="6"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter9"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="9"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction7"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="7"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="7"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter7"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="7"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction4"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="4"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter4"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction11"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="11"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="11"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter11"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="11"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction10"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="10"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="10"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="2"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter14"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="14"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction8"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="8"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="8"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction13"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="13"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="13"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction14"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="14"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="14"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/blockDiameter8"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="8"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter15"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="15"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/blockDiameter5"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/blockReduction12"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="12"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="12"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="1"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction5"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="5"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/blockReduction6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/diameter_box"
+            android:ems="10"
+            android:hint="6"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_column="6"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

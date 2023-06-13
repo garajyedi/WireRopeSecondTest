@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wholeReelOperations.reelCapacityCalculator.ReelCapacityCalculator">
+
+    <ImageView
+        android:id="@+id/spool1View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spool2View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spool1" />
+
+    <ImageView
+        android:id="@+id/spool2View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spool1View"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spool2" />
+
+    <EditText
+        android:id="@+id/flangeInnerDistanceText"
+        android:layout_width="200dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rectangle1"
+        android:ems="10"
+        android:hint="flange inner distance"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#746A6A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/spool1View"
+        app:layout_constraintStart_toStartOf="@+id/spool1View"
+        app:layout_constraintTop_toTopOf="@+id/spool1View" />
+
+    <EditText
+        android:id="@+id/gapText"
+        android:layout_width="15dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="313dp"
+        android:background="@drawable/rectangle2"
+        android:ems="10"
+        android:hint="@string/gap"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="#746A6A"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spool1View"
+        app:layout_constraintEnd_toEndOf="@+id/spool1View"
+        app:layout_constraintStart_toStartOf="@+id/spool1View"
+        app:layout_constraintTop_toTopOf="@+id/spool1View" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@+id/gapText"
+        app:layout_constraintTop_toTopOf="@+id/gapText"
+        app:srcCompat="@drawable/line4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/gapText"
+        app:srcCompat="@drawable/line12" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/gapText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/line11" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/flangeInnerDistanceText"
+        app:layout_constraintStart_toStartOf="@+id/flangeInnerDistanceText"
+        app:layout_constraintTop_toBottomOf="@+id/flangeInnerDistanceText"
+        app:srcCompat="@drawable/line5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/flangeInnerDistanceText"
+        app:layout_constraintTop_toBottomOf="@+id/flangeInnerDistanceText"
+        app:srcCompat="@drawable/line6" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/flangeInnerDistanceText"
+        app:layout_constraintTop_toBottomOf="@+id/flangeInnerDistanceText"
+        app:srcCompat="@drawable/line7" />
+
+    <EditText
+        android:id="@+id/coreDiameterText"
+        android:layout_width="39dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/rectangle3"
+        android:ems="10"
+        android:hint="@string/core"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#746A6A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spool1View"
+        app:layout_constraintEnd_toEndOf="@+id/spool1View"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/spool1View"
+        app:layout_constraintTop_toTopOf="@+id/spool1View"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coreDiameterText"
+        app:layout_constraintStart_toEndOf="@+id/coreDiameterText"
+        app:layout_constraintTop_toTopOf="@+id/coreDiameterText"
+        app:srcCompat="@drawable/line8" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/coreDiameterText"
+        app:srcCompat="@drawable/line9" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/coreDiameterText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/line10" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/spool2View"
+        app:layout_constraintStart_toEndOf="@+id/spool1View"
+        app:srcCompat="@drawable/line13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/spool1View"
+        app:layout_constraintTop_toBottomOf="@+id/spool2View"
+        app:srcCompat="@drawable/line14" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/spool2View"
+        app:layout_constraintEnd_toEndOf="@+id/spool2View"
+        app:layout_constraintStart_toStartOf="@+id/spool2View"
+        app:layout_constraintTop_toTopOf="@+id/spool2View"
+        app:srcCompat="@drawable/line1" />
+
+    <EditText
+        android:id="@+id/flangeDiameterText"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle4"
+        android:ems="10"
+        android:hint="@string/flange"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="#746A6A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/spool1View"
+        app:layout_constraintTop_toTopOf="@+id/spool2View" />
+
+    <Button
+        android:id="@+id/reelCapacityCalculationButton"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:onClick="calculate"
+        android:text="calculate"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/productDiameterText"
+        app:layout_constraintStart_toStartOf="@+id/productDiameterText"
+        app:layout_constraintTop_toBottomOf="@+id/productDiameterText" />
+
+    <EditText
+        android:id="@+id/productDiameterText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle4"
+        android:ems="10"
+        android:hint="product ⌀"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/spool1View"
+        app:layout_constraintStart_toStartOf="@+id/spool1View"
+        app:layout_constraintTop_toBottomOf="@+id/coreDiameterText" />
+
+    <TextView
+        android:id="@+id/capacityResultText"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/rectangle4"
+        android:hint="capacity"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/productDiameterText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/productDiameterText"
+        app:layout_constraintTop_toBottomOf="@+id/reelCapacityCalculationButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

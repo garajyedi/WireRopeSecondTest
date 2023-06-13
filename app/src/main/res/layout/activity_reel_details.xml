@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wholeReelOperations.ReelDetails">
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/flangeArrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spool" />
+
+    <ImageView
+        android:id="@+id/barrelArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="@+id/imageView24"
+        app:layout_constraintStart_toStartOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:srcCompat="@drawable/barrel" />
+
+    <TextView
+        android:id="@+id/barrelDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#71C562"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:rotation="90"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/barrelArrow"
+        app:layout_constraintEnd_toStartOf="@+id/barrelArrow"
+        app:layout_constraintTop_toTopOf="@+id/barrelArrow"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <ImageView
+        android:id="@+id/flangeArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:srcCompat="@drawable/flange" />
+
+    <TextView
+        android:id="@+id/flangeDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#71C562"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:rotation="90"
+
+        app:layout_constraintBottom_toBottomOf="@+id/flangeArrow"
+        app:layout_constraintEnd_toEndOf="@+id/flangeArrow"
+        app:layout_constraintStart_toStartOf="@+id/flangeArrow"
+        app:layout_constraintTop_toTopOf="@+id/flangeArrow" />
+
+    <ImageView
+        android:id="@+id/traverseArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="@+id/imageView24"
+        app:layout_constraintStart_toStartOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/traverse" />
+
+    <TextView
+        android:id="@+id/traverseDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#71C562"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/traverseArrow"
+        app:layout_constraintStart_toStartOf="@+id/traverseArrow"
+        app:layout_constraintTop_toBottomOf="@+id/traverseArrow" />
+
+    <TextView
+        android:id="@+id/spoolNameDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:background="#71C562"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <TextView
+        android:id="@+id/noteDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#71C562"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spoolNameDetailText" />
+
+    <Button
+        android:id="@+id/deleteRegisteredReel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteRegisteredReel"
+        android:text="delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteDetailText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
